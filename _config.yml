@@ -93,7 +93,7 @@ highlighter: rouge
 #  syntax_highlighter: rouge
 
 # using github gist
-# gems: [jekyll-gist]
-gems:
+# plugins: [jekyll-gist]
+plugins:
   - jekyll-seo-tag
   - jekyll-paginate

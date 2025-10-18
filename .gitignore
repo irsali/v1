@@ -10,3 +10,4 @@ slnx.sqlite
 VsWorkspaceState.json
 .suo
 .vs
+/vendor
