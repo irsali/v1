@@ -4,7 +4,7 @@
 title: "Irshad Ali"
 description: "Irshad Ali, Technichal blog"
 keywords: "Irshad, Ali, profile, south, delhi, india, programmer, resume, blog, Jekyll, github, gh-pages, Technichal, csharp, microsoft, software, web, developer, engineer,"
-baseurl: "/"
+baseurl: "/v1/"
 url: "//irsali.github.io"
 
 # blog img path
