@@ -28,7 +28,6 @@
     "jquery.gritter": "^1.7.4",
     "peity": "^3.2.0",
     "toastr": "^2.1.2",
-    "rickshaw": "^1.5.1",
-    "jekyll": "latest"
+    "rickshaw": "^1.5.1"
   }
 }
