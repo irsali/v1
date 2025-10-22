@@ -8,6 +8,8 @@ categories: [others]
 tags: [Vue]
 ---
 
+{% raw %}
+
 Vue
 ===
 
@@ -186,3 +188,4 @@ groceryList: \[
 }
 
 })
+{% endraw %}
