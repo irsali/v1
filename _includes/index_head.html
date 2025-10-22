@@ -9,26 +9,26 @@
   {% seo %}
   <title>{{ site.title }}</title>
   <!-- favicon -->
-  <link rel="shortcut icon" href="{{ "static/img/favicon.ico" | prepend: site.baseurl }}">
+  <link rel="shortcut icon" href="{{ '/static/img/favicon.ico' | relative_url }}">
 
   <!-- Third-party CSS -->
-  <link href="{{"bower_components/bootstrap/dist/css/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"bower_components/animate.css/animate.min.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"bower_components/components-font-awesome/css/font-awesome.min.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{"static/font-mfizz/font-mfizz.css"| prepend: site.baseurl }}" rel="stylesheet">
-  <!-- <link href="{{"bower_components/toastr/toastr.min.css"| prepend: site.baseurl }}" rel="stylesheet"> -->
-  <link href="{{"bower_components/jquery.gritter/css/jquery.gritter.css"| prepend: site.baseurl }}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{'static/font-mfizz/font-mfizz.css' | prepend: site.baseurl }}" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/toastr@2.1.2/build/toastr.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/gh/jboesch/jquery-gritter@1.7.4/css/jquery.gritter.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <!-- <link href="{{"static/css/pygments.css"| prepend: site.baseurl }}" rel="stylesheet"> -->
-  <link href="{{"static/css/style.min.css"| prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{'static/css/style.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 
   <!-- Third-party scripts -->
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-  <script src="{{"bower_components/jquery/dist/jquery.min.js"| prepend: site.baseurl }}"></script>
-  <script src="{{"bower_components/bootstrap/dist/js/bootstrap.min.js"| prepend: site.baseurl }}"></script>
-  <script src="{{"bower_components/i18next/i18next.min.js"| prepend: site.baseurl }}"></script>
-  <script src="{{"bower_components/PACE/pace.min.js"| prepend: site.baseurl }}"></script>
-  <script src="{{"bower_components/wow/dist/wow.min.js"| prepend: site.baseurl }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next@3.2.0/i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.2/dist/wow.min.js"></script>
 
   <!-- Custom and plugin javascript -->
   <!-- <script src="{{"static/js/inspinia.js"| prepend: site.baseurl }}"></script> -->

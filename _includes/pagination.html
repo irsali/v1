@@ -1,16 +1,18 @@
+{% if paginator %}
 <div class="row">
 <!-- Pagination links -->
             <div class="pagination">
                 {% if paginator.previous_page %}
                 <a href="{{ paginator.previous_page_path }}" class="previous btn btn-default">Previous</a> 
-                {% endif%}
+                {% endif %}
                 
                 {% if paginator.page %}
                 <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> 
-                {% endif%}
+                {% endif %}
 
-                {% if paginator.next_page                %}
+                {% if paginator.next_page %}
                 <a href="{{ paginator.next_page_path }}" class="next btn btn-default">Next</a>
-                {% endif%} 
+                {% endif %} 
             </div>
-</div
+</div>
+{% endif %}

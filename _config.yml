@@ -4,11 +4,11 @@
 title: "Irshad Ali"
 description: "Irshad Ali, Technichal blog"
 keywords: "Irshad, Ali, profile, south, delhi, india, programmer, resume, blog, Jekyll, github, gh-pages, Technichal, csharp, microsoft, software, web, developer, engineer,"
-baseurl: "/"
-url: "//irsali.github.io/v1"
+baseurl: ""
+url: "https://irsali.github.io"
 
 # blog img path
-img_path: "http://www.jack003.com/static/img/blog"
+img_path: "https://irsali.github.io/static/img/blog"
 
 paginate: 5
 paginate_path: "/blog/page:num/"
@@ -93,7 +93,7 @@ highlighter: rouge
 #  syntax_highlighter: rouge
 
 # using github gist
-# gems: [jekyll-gist]
-gems:
+# plugins: [jekyll-gist]
+plugins:
   - jekyll-seo-tag
   - jekyll-paginate
