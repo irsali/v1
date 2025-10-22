@@ -15,7 +15,13 @@ title: Blog
         <div class="wrapper wrapper-content animated fadeInRight">
 
             <!-- latest 10 blog -->
-			{% for post in paginator.posts %}
+            {% if paginator and paginator.posts %}
+            {% assign posts = paginator.posts %}
+            {% else %}
+            {% assign posts = site.posts %}
+            {% endif %}
+
+            {% for post in posts %}
             <div class="vote-item">
                 <div class="row">
                     <div class="col-md-10">
@@ -44,7 +50,9 @@ title: Blog
             </div>
             {% endfor %}
 
+            {% if paginator %}
             {% include pagination.html %}
+            {% endif %}
 
         </div>
     </div>
