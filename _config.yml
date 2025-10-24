@@ -4,11 +4,11 @@
 title: "Irshad Ali"
 description: "Irshad Ali, Technichal blog"
 keywords: "Irshad, Ali, profile, south, delhi, india, programmer, resume, blog, Jekyll, github, gh-pages, Technichal, csharp, microsoft, software, web, developer, engineer,"
-baseurl: ""
+baseurl: "/v1"
 url: "https://irsali.github.io"
 
-# blog img path
-img_path: "https://irsali.github.io/static/img/blog"
+# blog img path (absolute path including baseurl)
+img_path: "https://irsali.github.io/v1/static/img/blog"
 
 paginate: 5
 paginate_path: "/blog/page:num/"

@@ -9,18 +9,18 @@
   {% seo %}
   <title>{{ site.title }}</title>
   <!-- favicon -->
-  <link rel="shortcut icon" href="{{ '/static/img/favicon.ico' | relative_url }}">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/static/img/favicon.ico">
 
   <!-- Third-party CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <link href="{{ '/static/font-mfizz/font-mfizz.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ site.baseurl }}/static/font-mfizz/font-mfizz.css" rel="stylesheet">
   <!-- <link href="https://cdn.jsdelivr.net/npm/toastr@2.1.2/build/toastr.min.css" rel="stylesheet"> -->
   <link href="https://cdn.jsdelivr.net/gh/jboesch/jquery-gritter@1.7.4/css/jquery.gritter.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <!-- <link href="{{ '/static/css/pygments.css' | relative_url }}" rel="stylesheet"> -->
-  <link href="{{ '/static/css/style.min.css' | relative_url }}" rel="stylesheet">
+  <!-- <link href="{{ site.baseurl }}/static/css/pygments.css" rel="stylesheet"> -->
+  <link href="{{ site.baseurl }}/static/css/style.min.css" rel="stylesheet">
 
   <!-- Third-party scripts -->
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
@@ -31,6 +31,6 @@
   <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.2/dist/wow.min.js"></script>
 
   <!-- Custom and plugin javascript -->
-  <!-- <script src="{{ '/static/js/inspinia.js' | relative_url }}"></script> -->
+  <!-- <script src="{{ 'static/js/inspinia.js' | prepend: site.baseurl }}"></script> -->
 <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
 </head>

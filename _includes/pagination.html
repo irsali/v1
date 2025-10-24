@@ -3,7 +3,7 @@
 <!-- Pagination links -->
             <div class="pagination">
                 {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}" class="previous btn btn-default">Previous</a> 
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous btn btn-default">Previous</a> 
                 {% endif %}
                 
                 {% if paginator.page %}
@@ -11,7 +11,7 @@
                 {% endif %}
 
                 {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}" class="next btn btn-default">Next</a>
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next btn btn-default">Next</a>
                 {% endif %} 
             </div>
 </div>

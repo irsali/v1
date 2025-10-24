@@ -31,7 +31,7 @@ A brief introduction to get an idea, what to do.
 
 **Deploy elastic search on the system where you want to run your ElasticSearch.**
 
-1.  Read and follow <a href="/2016/09/25/elasticsearch-installation-guide.html" target="_blank" >ElasticSearch Installation Guide</a>
+1.  Read and follow <a href="{{ site.baseurl }}/2016/09/25/elasticsearch-installation-guide.html" target="_blank" >ElasticSearch Installation Guide</a>
 
 
 **Install Web Platform Installer 3.0 or above.**
@@ -47,7 +47,7 @@ A brief introduction to get an idea, what to do.
 
 Note: Below screens are of old version
 
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Application_Request_Routing.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Application_Request_Routing.png" />
 
 On this screen choose "Application Request Routing 3.0" and then click
 on "Add" and then Search also for "Rewrite" and click "Add.
@@ -57,31 +57,31 @@ appear.
 
 When everything is finished correctly you see the following.
 
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Web_Platform_Installer.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Web_Platform_Installer.png" />
 
 **Create a Website in IIS with a url (say abc.com).**
 
 Open IIS Manager and you should see a window as below.
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/IIS_Window.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/IIS_Window.png" />
 
 Create a new website for ElasticSearch as shown below. Right click on "sites" in the left part of IIS.
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Setting_ElasticsSearch_Website.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Setting_ElasticsSearch_Website.png" />
 
 Manager and click "Add Website".
 
 **Rewrite url (abc.com) to localhost port of ElasticSearch.**
 
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Url_Rewrite.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Url_Rewrite.png" />
 
 Now double click on the icon "Rewrite URL" and then in the right window
 click on "Add Rules(s)...", and a window should popup that looks like
 this:
 
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Url_Rewrite_Reverse_Proxy.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Url_Rewrite_Reverse_Proxy.png" />
 
 Now click on "Reverse Proxy" and then click OK in the bottom a new
 window will popup as below:
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Url_Rewrite_Reverse_Proxy_Rule.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Url_Rewrite_Reverse_Proxy_Rule.png" />
 
 You probably will get a warning that you are about to use ARR so please
 go ahead and accept this.
@@ -101,7 +101,7 @@ service install
 
 You should see something like:
 
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/ElasticSearch_Install_As_Service.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/ElasticSearch_Install_As_Service.png" />
 
 Now type the following:
 
@@ -109,7 +109,7 @@ service manager
 
 You should see the elasticsearch service manager:
 
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/ES_Start_From_ServiceManager.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/ES_Start_From_ServiceManager.png" />
 
 You have to change on the tab the "Startup type" from Manual to
 Automatic and then press Apply this should make Elasticsearch start
@@ -129,7 +129,7 @@ that it is working open a browser and go to the url "127.0.0.1:9200".
 
 If you see a json string something like what you see below in the
 picture then it means your ElasticSearch is running:
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Running_ES_Check.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/Running_ES_Check.png" />
 
 **Enable cors for the website ( Cross Origin Resource sharing ).**
 
@@ -139,7 +139,7 @@ headers like in below image
 Access-Control-Allow-Origin value should be selective, when in
 production.
 
-<img src="/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/ES_Final_WebConfig.png" />
+<img src="{{ site.baseurl }}/static/img/blog/ElasticSearch/Deploy ElasticSearch on IIS/ES_Final_WebConfig.png" />
 
 **References** 
 

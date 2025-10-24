@@ -124,14 +124,14 @@ you below error due to occurrence of multiple annonymous define.
 
 To reomove error use breeze.base.debug.js
 
-![](/static/img/blog/Aurelia/aurelia-breeze-client-startup/1.png)
+![]({{ site.baseurl }}/static/img/blog/Aurelia/aurelia-breeze-client-startup/1.png)
 
 Now breeze.base.debug.js needs backingStore adapter and you will see
 below error.
 
 Provide breeze-client/modelLibrary.backingStore.js via import in main.ts
 
-![](/static/img/blog/Aurelia/aurelia-breeze-client-startup/2.png)
+![]({{ site.baseurl }}/static/img/blog/Aurelia/aurelia-breeze-client-startup/2.png)
 
 Voila, Errors are gone.
 

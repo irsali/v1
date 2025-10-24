@@ -20,6 +20,6 @@ excluded). Visual Studio is unable to provide intellisense.
 Just add the non-minified css file in project, you will see intellisense
 back in your project.
 
-![](/static/img/blog/Visual_Studio/Visual-Studio-Ensuring-Intellisense_files/image001.png)
+![]({{ site.baseurl }}/static/img/blog/Visual_Studio/Visual-Studio-Ensuring-Intellisense_files/image001.png)
 
 Happy Coding!

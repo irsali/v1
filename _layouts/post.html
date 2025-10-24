@@ -30,7 +30,7 @@ layout: default
                     <div id="post-nav">
                         <div class="pull-left">
                             {% if page.previous.url %}
-                            <a class="prev btn btn-default" href="{{page.previous.url}}">
+                            <a class="prev btn btn-default" href="{{ page.previous.url | prepend: site.baseurl }}">
                                 <span>{{page.previous.title}}</span>
                             </a>
                             {% endif %}
@@ -38,7 +38,7 @@ layout: default
 
                         <div class="pull-right">
                             {% if page.next.url %}
-                            <a class="next btn btn-default" href="{{page.next.url}}">
+                            <a class="next btn btn-default" href="{{ page.next.url | prepend: site.baseurl }}">
                                 <span>{{page.next.title}}</span>
                             </a>
                             {% endif %}

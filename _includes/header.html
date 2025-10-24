@@ -12,28 +12,28 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="/blog/">{{ site.index.home }}</a></li>
+                        <li><a class="page-scroll" href="{{ site.baseurl }}/blog/">{{ site.index.home }}</a></li>
 
                         {% if page.title == site.index.csharp %}
                             <li class="active">
                         {% else %}
                             <li>
                         {% endif %}
-                            <a class="page-scroll" href="/csharp/">{{ site.index.csharp }}</a></li>
+                            <a class="page-scroll" href="{{ site.baseurl }}/csharp/">{{ site.index.csharp }}</a></li>
                       
                         {% if page.title == site.index.elasticsearch %}
                             <li class="active">
                         {% else %}
                             <li>
                         {% endif %}
-                            <a class="page-scroll" href="/elasticsearch/">{{ site.index.elasticsearch }}</a></li>
+                            <a class="page-scroll" href="{{ site.baseurl }}/elasticsearch/">{{ site.index.elasticsearch }}</a></li>
 
                         {% if page.title == site.index.others %}
                             <li class="active">
                         {% else %}
                             <li>
                         {% endif %}
-                            <a class="page-scroll" href="/others/">{{ site.index.others }}</a></li>
+                            <a class="page-scroll" href="{{ site.baseurl }}/others/">{{ site.index.others }}</a></li>
                     </ul>
                 </div>
             </div>
